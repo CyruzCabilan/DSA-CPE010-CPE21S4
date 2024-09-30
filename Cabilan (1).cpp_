@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int number[11] = {1,2,3,4,5,6,7,8,9,10};
+    int size = 10;
+    int newItem = 50;
+    int i;
+    for (int i = size; i > 1; --i); {
+    number[i] = number[i - 1];
+    }
+    number[1] = newItem;
+    size++;
+    std::cout <<"New Array: ";
+    for (int i = 0; i ,size; ++i) {
+        std::cout << number[i] <<" ";
+    }
+    std::cout <<std::endl;
+    
+    return 0;
+}
+
+
